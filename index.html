@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Sign Up Form</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<main class="container">
+			<div class="img-container">
+				<div class="logo-banner">
+					<img src="odin-lined.png" alt="Logo" class="logo" />
+					<h1 class="logo-text">ODIN</h1>
+				</div>
+				<div class="photo-credit">
+					<p>Photo by <a href="#">Photographer</a></p>
+				</div>
+			</div>
+			<div class="form-container">
+				<div class="text-container">
+					<p class="header-text">This is not a real online service! You know you need something like this in your
+						life to
+						help you realize
+						your deepest dreams. Sign up now to get started.</p>
+					<p class="subheader-text">You know you want to.</p>
+				</div>
+				<form id="signup-form" class="form-main">
+					<div class="form-up">
+						<h2 class="form-title">Let's do this!</h2>
+						<div class="form-group">
+							<div class="form-field">
+								<label for="firstname">First Name</label>
+								<input type="text" id="firstname" name="firstname" required />
+								<span class="error-message" id="firstname-error"></span>
+							</div>
+							<div class="form-field">
+								<label for="lastname">Last Name</label>
+								<input type="text" id="lastname" name="lastname" required />
+								<span class="error-message" id="lastname-error"></span>
+							</div>
+							<div class="form-field">
+								<label for="email">Email</label>
+								<input type="email" id="email" name="email" required />
+								<span class="error-message" id="email-error"></span>
+							</div>
+							<div class="form-field">
+								<label for="phone">Phone Number</label>
+								<input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="1234567890"
+									required />
+								<span class="error-message" id="phone-error"></span>
+							</div>
+							<div class="form-field">
+								<label for="password">Password</label>
+								<input type="password" id="password" name="password" required />
+								<span class="error-message" id="password-error"></span>
+							</div>
+							<div class="form-field">
+								<label for="confirm-password">Confirm Password</label>
+								<input type="password" id="confirm-password" name="confirm-password" required />
+								<span class="error-message" id="confirm-password-error"></span>
+							</div>
+						</div>
+					</div>
+					<div class="form-down">
+						<div class="form-btn">
+							<button type="submit" class="btn">Create Account</button>
+						</div>
+						<div class="form-footer">
+							<p>Already have an account? <a href="#" class="login-link">Log in</a></p>
+						</div>
+					</div>
+				</form>
+			</div>
+		</main>
+		<script src="script.js"></script>
+	</body>
+</html>
